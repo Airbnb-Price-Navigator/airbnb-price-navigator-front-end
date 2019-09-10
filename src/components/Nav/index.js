@@ -11,7 +11,7 @@ const Nav = () => {
 				<h1>Airbnb Price Navigator</h1>
 			</div>
 			<nav>
-				<p>About</p>
+				<a href='/'>About</a>
 			</nav>
 		</Header>
 	);
@@ -22,8 +22,26 @@ export default Nav;
 const Header = styled.header`
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	font-size: 1.6rem;
+	padding: 30px;
+	margin: 0 auto;
+	max-width: 1200px;
 
 	.logo {
 		display: flex;
+		align-items: center;
+
+		h1 {
+			font-size: 2rem;
+			margin-left: 15px;
+			font-weight: 600;
+		}
+	}
+
+	a {
+		font-weight: 600;
+		color: #3f3f3f;
+		text-decoration: none;
 	}
 `;
