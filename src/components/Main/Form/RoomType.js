@@ -1,14 +1,16 @@
 import React from 'react';
 
+import Select from './Select';
+
 const RoomType = () => {
 	return (
 		<>
 			<label htmlFor='room'>Room Type</label>
-			<select>
+			<Select>
 				<option>Entire Property</option>
 				<option>Private Room</option>
 				<option>Shared Room</option>
-			</select>
+			</Select>
 		</>
 	);
 };

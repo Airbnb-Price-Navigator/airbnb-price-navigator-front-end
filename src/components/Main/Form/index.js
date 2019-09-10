@@ -31,13 +31,6 @@ const PropertyForm = styled.form`
 	display: flex;
 	flex-direction: column;
 
-	> select {
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		appearance: none;
-		position: relative;
-	}
-
 	input[type='number']::-webkit-inner-spin-button,
 	input[type='number']::-webkit-outer-spin-button {
 		-webkit-appearance: none;

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Select from './Select';
+
 import { TwoColumnRow } from '../../../styles/shared/TwoColumnRow';
 
 const BedTypes = () => {
@@ -7,13 +9,13 @@ const BedTypes = () => {
 		<TwoColumnRow>
 			<div>
 				<label htmlFor='bedType'>Bed Types</label>
-				<select id='bedType'>
+				<Select id='bedType'>
 					<option>Standard Bed</option>
 					<option>Couch</option>
 					<option>Futon</option>
 					<option>Pull-Out Couch</option>
 					<option>Air Mattress</option>
-				</select>
+				</Select>
 			</div>
 			<div>
 				<label htmlFor='beds'># of Beds</label>

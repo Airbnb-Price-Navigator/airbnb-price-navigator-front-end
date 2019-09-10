@@ -1,10 +1,12 @@
 import React from 'react';
 
+import Select from './Select';
+
 const PropertyType = () => {
 	return (
 		<>
 			<label htmlFor='property'>Property Type</label>
-			<select>
+			<Select>
 				<option>Apartment</option>
 				<option>House</option>
 				<option>Condominium</option>
@@ -15,7 +17,7 @@ const PropertyType = () => {
 				<option>Loft</option>
 				<option>Villa</option>
 				<option>Other</option>
-			</select>
+			</Select>
 		</>
 	);
 };
