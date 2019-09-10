@@ -2,21 +2,21 @@ import React from 'react';
 
 import Select from './Select';
 
-const PropertyType = () => {
+const PropertyType = ({ value, formChange }) => {
 	return (
 		<>
-			<label htmlFor='property'>Property Type</label>
-			<Select>
-				<option>Apartment</option>
-				<option>House</option>
-				<option>Condominium</option>
-				<option>Guest House</option>
-				<option>Guest Suite</option>
-				<option>Townhouse</option>
-				<option>Bungalow</option>
-				<option>Loft</option>
-				<option>Villa</option>
-				<option>Other</option>
+			<label htmlFor='property_type'>Property Type</label>
+			<Select value={value} onChange={formChange} id='property_type'>
+				<option value='Apartment'>Apartment</option>
+				<option value='House'>House</option>
+				<option value='Condominium'>Condominium</option>
+				<option value='Guesthouse'>Guest House</option>
+				<option value='Guest suite'>Guest Suite</option>
+				<option value='Townhouse'>Townhouse</option>
+				<option value='Bungalow'>Bungalow</option>
+				<option value='Loft'>Loft</option>
+				<option value='Villa'>Villa</option>
+				<option value='Other'>Other</option>
 			</Select>
 		</>
 	);

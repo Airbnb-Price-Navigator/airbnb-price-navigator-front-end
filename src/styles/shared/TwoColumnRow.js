@@ -7,5 +7,10 @@ export const TwoColumnRow = styled.div`
 	div {
 		display: flex;
 		flex-direction: column;
+		width: 49%;
+
+		div {
+			width: 100%;
+		}
 	}
 `;

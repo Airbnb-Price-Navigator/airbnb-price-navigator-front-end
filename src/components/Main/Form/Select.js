@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Select = ({ children }) => {
+const Select = ({ children, value, onChange, id }) => {
 	return (
 		<Dropdown>
-			<select>{children}</select>
+			<select id={id} value={value} onChange={onChange}>
+				{children}
+			</select>
 			<div />
 		</Dropdown>
 	);
@@ -23,9 +25,10 @@ const Dropdown = styled.div`
 		position: absolute;
 		color: #494949;
 		right: 7px;
-		bottom: 6px;
+		bottom: 2px;
 		transform: rotate(90deg);
 		pointer-events: none;
+		transition: transform 300ms ease;
 	}
 
 	select:focus-within ~ div:after {
@@ -38,6 +41,8 @@ const Dropdown = styled.div`
 		position: relative;
 		border: 0.6px solid #e4e4e4;
 		height: 30px;
+		font-size: 1.5rem;
+		padding: 5px;
 
 		&::-ms-expand {
 			display: none;
