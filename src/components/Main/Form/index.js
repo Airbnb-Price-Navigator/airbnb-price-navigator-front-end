@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import ZipCode from './ZipCode';
 import PropertyType from './PropertyType';
@@ -11,7 +12,7 @@ const Form = () => {
 	return (
 		<div>
 			<h2>Find out the value of your property</h2>
-			<form>
+			<PropertyForm>
 				<ZipCode />
 				<PropertyType />
 				<RoomType />
@@ -19,9 +20,27 @@ const Form = () => {
 				<BedTypes />
 				<Bodies />
 				<button type='submit'>Submit</button>
-			</form>
+			</PropertyForm>
 		</div>
 	);
 };
 
 export default Form;
+
+const PropertyForm = styled.form`
+	display: flex;
+	flex-direction: column;
+
+	> select {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		position: relative;
+	}
+
+	input[type='number']::-webkit-inner-spin-button,
+	input[type='number']::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+`;

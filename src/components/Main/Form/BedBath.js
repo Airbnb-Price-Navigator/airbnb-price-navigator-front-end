@@ -1,17 +1,19 @@
 import React from 'react';
 
+import { TwoColumnRow } from '../../../styles/shared/TwoColumnRow';
+
 const BedBath = () => {
 	return (
-		<>
+		<TwoColumnRow>
 			<div>
-				<label htmlFor='bedrooms'>Bedrooms</label>
-				<input type='text' id='bedrooms' />
+				<label htmlFor='bedrooms'># of Bedrooms</label>
+				<input type='number' id='bedrooms' />
 			</div>
 			<div>
-				<label htmlFor='bathrooms'>Bathrooms</label>
-				<input type='text' id='bathrooms' />
+				<label htmlFor='bathrooms'># of Bathrooms</label>
+				<input type='number' id='bathrooms' />
 			</div>
-		</>
+		</TwoColumnRow>
 	);
 };
 
