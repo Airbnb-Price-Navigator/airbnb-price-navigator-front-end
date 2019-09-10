@@ -4,8 +4,8 @@ import axios from 'axios';
 
 import Form from './Form';
 import Results from './Results';
-import Discoveries from './Discoveries';
-import Team from './Team';
+// import Discoveries from './Discoveries';
+// import Team from './Team';
 
 const Main = () => {
 	const init = {
@@ -20,7 +20,7 @@ const Main = () => {
 	};
 
 	const [form, setForm] = useState(init);
-	const [data, setData] = useState(null);
+	const [data, setData] = useState({ prediction: 0, bins: [], plotValues: [] });
 
 	const formChange = e => {
 		let value =
@@ -38,6 +38,7 @@ const Main = () => {
 			'http://airbnb-app.gwmmfpt9vt.us-east-2.elasticbeanstalk.com/prediction',
 			form,
 		);
+		console.log(results.data);
 		setData({
 			prediction: results.data.prediction,
 			bins: results.data.bins,
@@ -51,8 +52,8 @@ const Main = () => {
 				<Form data={form} formChange={formChange} handleSubmit={handleSubmit} />
 				<Results data={data} />
 			</Top>
-			<Discoveries />
-			<Team />
+			{/* <Discoveries />
+			<Team /> */}
 		</>
 	);
 };
