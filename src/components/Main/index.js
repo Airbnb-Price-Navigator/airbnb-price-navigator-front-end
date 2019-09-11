@@ -76,7 +76,7 @@ const Top = styled.section`
 
 	h2 {
 		font-weight: 600;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		margin-bottom: 10px;
 	}
 `;

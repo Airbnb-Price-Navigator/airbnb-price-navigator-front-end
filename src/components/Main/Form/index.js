@@ -50,6 +50,8 @@ export default Form;
 
 const PropertyForm = styled.form`
 	width: 30%;
+	min-width: 250px;
+	max-width: 275px;
 	display: flex;
 	flex-direction: column;
 
