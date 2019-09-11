@@ -20,11 +20,11 @@ const BedTypes = ({ values, formChange }) => {
 				</Select>
 			</div>
 			<div>
-				<label htmlFor='beds'># of Beds</label>
+				<label htmlFor='beds'>Beds</label>
 				<Input
 					type='number'
 					id='beds'
-					placeholder='1'
+					placeholder='# of Beds'
 					value={beds}
 					onChange={formChange}
 				/>

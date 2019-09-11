@@ -12,7 +12,7 @@ const BedBath = ({ values, formChange }) => {
 				<Input
 					type='number'
 					id='bedrooms'
-					placeholder='2'
+					placeholder='# of Bedrooms'
 					value={bedrooms}
 					onChange={formChange}
 					required
@@ -23,7 +23,7 @@ const BedBath = ({ values, formChange }) => {
 				<Input
 					type='number'
 					id='bathrooms'
-					placeholder='1'
+					placeholder='# of Bathrooms'
 					value={bathrooms}
 					onChange={formChange}
 					required
