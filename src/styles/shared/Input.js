@@ -8,7 +8,7 @@ const Input = styled.input`
 	padding: 5px;
 	width: 100%;
 
-	$:placeholder {
+	&::placeholder {
 		color: #d8d8d8;
 	}
 `;
