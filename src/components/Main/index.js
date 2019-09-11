@@ -5,7 +5,7 @@ import axios from 'axios';
 import Form from './Form';
 import Results from './Results';
 import Discoveries from './Discoveries';
-// import Team from './Team';
+import Team from './Team';
 
 const Main = () => {
 	const init = {
@@ -60,7 +60,7 @@ const Main = () => {
 				<Results data={data} />
 			</Top>
 			<Discoveries />
-			{/* <Team /> */}
+			<Team />
 		</>
 	);
 };
