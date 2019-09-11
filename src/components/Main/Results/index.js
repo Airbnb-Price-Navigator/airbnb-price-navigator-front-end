@@ -19,11 +19,4 @@ export default Results;
 
 const ResultsStyle = styled.div`
 	width: 55%;
-
-	h3 {
-		font-weight: 600;
-		font-size: 5rem;
-		color: #d8d8d8;
-		margin-bottom: 30px;
-	}
 `;
