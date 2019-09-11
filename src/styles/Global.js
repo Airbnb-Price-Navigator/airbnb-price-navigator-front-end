@@ -1,7 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
 
-import cerealBook from '../assets/fonts/AirbnbCereal-Book.ttf';
-
 const GlobalStyles = createGlobalStyle`
     html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, menu, nav, section, time, mark, audio, video, details, summary {
         margin: 0;
@@ -130,13 +128,6 @@ const GlobalStyles = createGlobalStyle`
     /* let's clear some floats */
     .clearfix:after { content: " "; display: block; clear: both; }
 
-    @font-face {
-        font-family: 'Cereal Book';
-        src: url(${cerealBook}) format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
-
     html, body {
         height: 100%;
         width: 100%;
@@ -147,7 +138,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     * {
-        font-family: 'Cereal Book';
+        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     }
 `;
 
