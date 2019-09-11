@@ -3,13 +3,15 @@ import styled from 'styled-components';
 
 import globe from '../../assets/icons/globe.svg';
 
+import Logo from '../../styles/shared/Logo';
+
 const Nav = () => {
 	return (
 		<Header>
-			<div className='logo'>
+			<Logo>
 				<img src={globe} alt='Globe Icon' />
 				<h1>Airbnb Price Navigator</h1>
-			</div>
+			</Logo>
 			<nav>
 				<a href='/'>About</a>
 			</nav>
@@ -27,17 +29,6 @@ const Header = styled.header`
 	padding: 30px;
 	margin: 0 auto;
 	max-width: 1200px;
-
-	.logo {
-		display: flex;
-		align-items: center;
-
-		h1 {
-			font-size: 2rem;
-			margin-left: 15px;
-			font-weight: 600;
-		}
-	}
 
 	a {
 		font-weight: 600;

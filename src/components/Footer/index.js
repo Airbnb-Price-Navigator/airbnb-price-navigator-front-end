@@ -1,23 +1,57 @@
 import React from 'react';
+import styled from 'styled-components';
 import { FaTwitter, FaFacebookF } from 'react-icons/fa';
+
+import globe from '../../assets/icons/globe.svg';
+
+import Logo from '../../styles/shared/Logo';
 
 const Footer = () => {
 	return (
-		<>
-			<h2>Airbnb Price Navigator</h2>
+		<FooterStyle>
+			<Logo>
+				<img src={globe} alt='Globe Icon' />
+				<h2>Airbnb Price Navigator</h2>
+			</Logo>
 			<nav>
-				<a href='http://www.com'>Terms</a>
-				<a href='http://www.com'>Privacy</a>
-				<a href='http://www.com'>Contact Us</a>
-				<a href='http://www.com'>
+				<a href='/'>Terms</a>
+				<a href='/'>Privacy</a>
+				<a href='/'>Contact Us</a>
+				<a href='/'>
 					<FaTwitter />
 				</a>
-				<a href='http://www.com'>
+				<a href='/'>
 					<FaFacebookF />
 				</a>
 			</nav>
-		</>
+		</FooterStyle>
 	);
 };
 
 export default Footer;
+
+const FooterStyle = styled.footer`
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.6rem;
+	padding: 30px;
+	margin: 10px auto;
+	max-width: 1200px;
+
+	a {
+		font-weight: 600;
+		color: #3f3f3f;
+		text-decoration: none;
+
+		svg {
+			color: #00a899;
+		}
+	}
+
+	nav {
+		width: 30%;
+		display: flex;
+		justify-content: space-between;
+	}
+`;
