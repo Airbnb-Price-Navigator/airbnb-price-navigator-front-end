@@ -5,7 +5,7 @@ const Card = ({ person }) => {
 	const { name, description, image, url } = person;
 	return (
 		<Profile>
-			<a href={url}>
+			<a href={url} target='_blank' rel='noopener noreferrer'>
 				<img src={image} alt={name} />
 			</a>
 			<h3>{name}</h3>
