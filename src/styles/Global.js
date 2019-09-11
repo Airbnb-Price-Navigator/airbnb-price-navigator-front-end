@@ -139,6 +139,7 @@ const GlobalStyles = createGlobalStyle`
 
     * {
         font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+        color: #3F3F3F;
     }
 `;
 
