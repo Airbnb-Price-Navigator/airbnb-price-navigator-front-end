@@ -6,9 +6,7 @@ import Graph from './Graph';
 
 const Results = ({ data }) => {
 	const prediction = data ? data.prediction : null;
-	const graphData = data
-		? { bins: data.bins, plotValues: data.plotValues }
-		: null;
+	const graphData = data ? data.plotValues : null;
 	return (
 		<ResultsStyle>
 			<Worth value={prediction} />
@@ -26,5 +24,6 @@ const ResultsStyle = styled.div`
 		font-weight: 600;
 		font-size: 5rem;
 		color: #d8d8d8;
+		margin-bottom: 30px;
 	}
 `;
