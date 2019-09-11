@@ -45,14 +45,14 @@ const Team = () => {
 			description:
 				'UX Designer responsible for creating a new visual identity for the project.',
 			image: jacob,
-			url: 'https://github.com/',
+			url: 'http://jkb.work/',
 		},
 		{
 			name: 'Kevin Smith',
 			description:
 				'Front end engineer responsible for refactoring React code and implementing new UX design.',
 			image: kevin,
-			url: 'https://github.com/keveightysev',
+			url: 'https://www.iridigital.com',
 		},
 	];
 
