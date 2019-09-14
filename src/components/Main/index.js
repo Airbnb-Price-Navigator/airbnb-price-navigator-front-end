@@ -20,7 +20,11 @@ const Main = () => {
 	};
 
 	const [form, setForm] = useState(init);
-	const [data, setData] = useState({ prediction: 0, plotValues: [] });
+	const [data, setData] = useState({
+		prediction: 0,
+		plotValues: [],
+		noResults: false,
+	});
 
 	const formChange = e => {
 		let value =
@@ -31,12 +35,11 @@ const Main = () => {
 			...form,
 			[e.target.id]: value,
 		});
-		setData({ prediction: 0, plotValues: [] });
+		setData({ prediction: 0, plotValues: [], noResults: false });
 	};
 
 	const handleSubmit = async e => {
 		e.preventDefault();
-		console.log(form);
 		await setForm({
 			...form,
 			zipcode: form.zipcode.toString(),
@@ -45,12 +48,19 @@ const Main = () => {
 			'https://d2qu1npgxlnkvp.cloudfront.net/prediction',
 			form,
 		);
-		console.log(results.data);
-		setData({
-			prediction: results.data.prediction,
-			bins: results.data.bins,
-			plotValues: results.data.plot_values,
-		});
+		const dataCheck = results.data.plot_values.reduce((acc, curr) => {
+			return acc + curr;
+		}, 0);
+		dataCheck > 0
+			? setData({
+					prediction: results.data.prediction,
+					plotValues: results.data.plot_values,
+			  })
+			: setData({
+					...data,
+					prediction: results.data.prediction,
+					noResults: true,
+			  });
 	};
 
 	return (

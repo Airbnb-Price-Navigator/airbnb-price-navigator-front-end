@@ -8,7 +8,9 @@ import {
 	ResponsiveContainer,
 } from 'recharts';
 
-const Graph = ({ data }) => {
+import Modal from './Modal';
+
+const Graph = ({ data, noResults, prediction }) => {
 	const [plotValues, setPlotValues] = useState([]);
 
 	useEffect(() => {
@@ -80,6 +82,7 @@ const Graph = ({ data }) => {
 					<Bar dataKey='amt' fill='#00A799' />
 				</BarChart>
 			</ResponsiveContainer>
+			<Modal noResults={noResults} prediction={prediction} />
 		</>
 	);
 };
