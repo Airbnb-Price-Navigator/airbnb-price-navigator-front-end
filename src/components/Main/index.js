@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
 
@@ -18,6 +18,8 @@ const Main = () => {
 		beds: '',
 		bed_type: 'Real Bed',
 	};
+
+	const resultsTop = useRef(null);
 
 	const [form, setForm] = useState(init);
 	const [data, setData] = useState({
@@ -61,13 +63,19 @@ const Main = () => {
 					prediction: results.data.prediction,
 					noResults: true,
 			  });
+		if (window.innerWidth < 780) {
+			window.scrollTo({
+				top: resultsTop.current.offsetTop,
+				behavior: 'smooth',
+			});
+		}
 	};
 
 	return (
 		<>
 			<Top>
 				<Form data={form} formChange={formChange} handleSubmit={handleSubmit} />
-				<Results data={data} />
+				<Results data={data} resultsTop={resultsTop} />
 			</Top>
 			<Discoveries />
 			<Team />
@@ -83,6 +91,12 @@ const Top = styled.section`
 	width: 80%;
 	max-width: 1000px;
 	margin: 60px auto;
+
+	@media (max-width: 780px) {
+		margin: 10px auto;
+		flex-direction: column;
+		width: 95%;
+	}
 
 	h2 {
 		font-weight: 600;

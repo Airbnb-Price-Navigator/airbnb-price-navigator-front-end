@@ -15,6 +15,16 @@ const Section = styled.section`
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-evenly;
+
+		@media (max-width: 780px) {
+			flex-direction: column;
+		}
+	}
+
+	@media (max-width: 780px) {
+		width: 85%;
+		max-width: 500px;
+		margin: 30px auto;
 	}
 `;
 

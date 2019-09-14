@@ -43,6 +43,9 @@ const Dropdown = styled.div`
 		height: 30px;
 		font-size: 1.5rem;
 		padding: 5px;
+		@media (max-width: 780px) {
+			height: 35px;
+		}
 
 		&::-ms-expand {
 			display: none;

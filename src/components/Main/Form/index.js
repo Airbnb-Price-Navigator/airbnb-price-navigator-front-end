@@ -50,6 +50,13 @@ export default Form;
 
 const PropertyForm = styled.form`
 	width: 30%;
+
+	@media (max-width: 780px) {
+		width: 85%;
+		max-width: 500px;
+		margin: 0 auto 50px;
+	}
+
 	min-width: 250px;
 	max-width: 275px;
 	display: flex;
@@ -63,6 +70,10 @@ const PropertyForm = styled.form`
 
 	label {
 		margin: 10px 0 5px;
+
+		@media (max-width: 780px) {
+			font-size: 1.5rem;
+		}
 	}
 
 	button {

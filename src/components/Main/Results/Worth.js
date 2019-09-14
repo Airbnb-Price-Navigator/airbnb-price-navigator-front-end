@@ -31,7 +31,7 @@ const Worth = ({ value }) => {
 
 	return (
 		<>
-			<h2>Your property could be worth</h2>
+			<h2 id='resultsTop'>Your property could be worth</h2>
 			<WorthText match={match}>${worth} / night</WorthText>
 		</>
 	);
@@ -44,4 +44,8 @@ const WorthText = styled.h3`
 	font-size: 5rem;
 	color: ${({ match }) => (match ? '#inherit' : '#d8d8d8')};
 	margin-bottom: 30px;
+
+	@media (max-width: 780px) {
+		font-size: 4rem;
+	}
 `;

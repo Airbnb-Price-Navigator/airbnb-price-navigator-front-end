@@ -133,8 +133,13 @@ const GlobalStyles = createGlobalStyle`
         width: 100%;
     }
 
+    * {
+        -webkit-overflow-scrolling: touch;
+    }
+
     html {
         font-size: 62.5%;
+        scroll-behavior: smooth;
     }
 
     * {

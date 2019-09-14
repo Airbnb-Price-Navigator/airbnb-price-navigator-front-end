@@ -52,7 +52,7 @@ const Graph = ({ data, noResults, prediction }) => {
 				amt: data[8] || 0,
 			},
 			{
-				bin: '$1,000-50,000',
+				bin: '$1,000+',
 				amt: data[9] || 0,
 			},
 		]);
@@ -79,10 +79,6 @@ const Graph = ({ data, noResults, prediction }) => {
 						width={40}
 						minTickGap={50}
 						label={<YAxisLabel />}
-						// label={{
-						// 	value: 'hello',
-						// 	angle: -90,
-						// }}
 					/>
 					<Bar dataKey='amt' fill='#00A799' />
 				</BarChart>
