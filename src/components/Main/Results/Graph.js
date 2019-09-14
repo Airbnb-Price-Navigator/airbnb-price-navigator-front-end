@@ -76,8 +76,13 @@ const Graph = ({ data, noResults, prediction }) => {
 						ticks={[50, 100, 150]}
 						axisLine={false}
 						tickLine={false}
-						width={20}
+						width={40}
 						minTickGap={50}
+						label={<YAxisLabel />}
+						// label={{
+						// 	value: 'hello',
+						// 	angle: -90,
+						// }}
 					/>
 					<Bar dataKey='amt' fill='#00A799' />
 				</BarChart>
@@ -103,5 +108,18 @@ const RotatedTick = ({ x, y, payload }) => {
 				{payload.value}
 			</text>
 		</g>
+	);
+};
+
+const YAxisLabel = ({ viewBox }) => {
+	return (
+		<text
+			x={viewBox.x}
+			y={viewBox.y}
+			transform='rotate(-90, 90, 90) translate(-10, 5)'
+			className='recharts-text recharts-label'
+		>
+			Number of AirBnB Units
+		</text>
 	);
 };
