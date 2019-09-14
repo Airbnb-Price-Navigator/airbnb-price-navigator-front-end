@@ -3,12 +3,12 @@ import styled from 'styled-components';
 const Section = styled.section`
 	width: 90%;
 	max-width: 1100px;
-	margin: 0 auto;
+	margin: 75px auto;
 
 	h2 {
 		font-size: 2rem;
 		font-weight: 600;
-		margin: 20px 0 10px;
+		margin: 20px 0 40px;
 	}
 
 	> div {

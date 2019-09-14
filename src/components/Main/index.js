@@ -82,7 +82,7 @@ const Top = styled.section`
 	justify-content: space-between;
 	width: 80%;
 	max-width: 1000px;
-	margin: 0 auto;
+	margin: 60px auto;
 
 	h2 {
 		font-weight: 600;
