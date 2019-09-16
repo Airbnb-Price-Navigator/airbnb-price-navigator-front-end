@@ -69,7 +69,6 @@ const Main = () => {
 				behavior: 'smooth',
 			});
 		}
-		console.log(results.data.plot_values);
 	};
 
 	return (
