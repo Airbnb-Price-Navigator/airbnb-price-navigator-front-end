@@ -24,7 +24,7 @@ const Main = () => {
 	const [form, setForm] = useState(init);
 	const [data, setData] = useState({
 		prediction: 0,
-		plotValues: [],
+		plotValues: [2, 47, 55, 58, 66, 34, 22, 13, 6, 5],
 		noResults: false,
 	});
 
@@ -69,6 +69,7 @@ const Main = () => {
 				behavior: 'smooth',
 			});
 		}
+		console.log(results.data.plot_values);
 	};
 
 	return (
