@@ -52,6 +52,6 @@ const FooterStyle = styled.footer`
 	nav {
 		width: 30%;
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-end;
 	}
 `;
