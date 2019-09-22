@@ -17,42 +17,47 @@ const Team = () => {
 			description:
 				'Product Owner. Responsible for model implementation and flask deployment.',
 			image: blank,
-			url: 'https://github.com/connorpheraty',
+			links: { github: 'https://github.com/connorpheraty' },
 		},
 		{
 			name: 'Shreyas Jothish',
 			description:
 				'Worked on Data Wrangling, Feature Engineering, and Data Modeling of seasonal information Los Angeles dataset.',
 			image: shreyas,
-			url: 'https://github.com/ShreyasJothish',
+			links: { github: 'https://github.com/ShreyasJothish' },
 		},
 		{
 			name: 'Tomas Fox',
 			description:
 				'Responsible for benchmarking our Airbnb predictor app against Tree Ensemble ML models.',
 			image: tomas,
-			url: 'https://github.com/tomfox1',
+			links: { github: 'https://github.com/tomfox1' },
 		},
 		{
 			name: 'Chris Carter',
 			description:
 				'Responsible for the front end of the project. Partnered with the UI developers and back end architect to ensure full functionality of React components.',
 			image: blank,
-			url: 'https://github.com/ChrisJCarter91',
+			links: { github: 'https://github.com/ChrisJCarter91' },
 		},
 		{
 			name: 'Jacob Bartlett',
 			description:
 				'UX Designer responsible for creating a new visual identity for the project.',
 			image: jacob,
-			url: 'http://jkb.work/',
+			links: { portfolio: 'http://jkb.work/' },
 		},
 		{
 			name: 'Kevin Smith',
 			description:
 				'Front end engineer responsible for refactoring React code and implementing new UX design.',
 			image: kevin,
-			url: 'https://www.iridigital.com',
+			links: {
+				portfolio: 'https://www.iridigital.com',
+				github: 'https://github.com/keveightysev',
+				linkedin: 'https://www.linkedin.com/in/keveightysev',
+				twitter: 'https://twitter.com/keveightysev',
+			},
 		},
 	];
 
