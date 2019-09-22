@@ -135,6 +135,8 @@ const GlobalStyles = createGlobalStyle`
 
     * {
         -webkit-overflow-scrolling: touch;
+        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+        color: #3F3F3F;
     }
 
     html {
@@ -142,9 +144,8 @@ const GlobalStyles = createGlobalStyle`
         scroll-behavior: smooth;
     }
 
-    * {
-        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-        color: #3F3F3F;
+    #root {
+        position: relative;
     }
 `;
 
