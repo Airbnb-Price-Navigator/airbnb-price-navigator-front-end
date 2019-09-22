@@ -47,7 +47,7 @@ const Main = () => {
 			zipcode: form.zipcode.toString(),
 		});
 		const results = await axios.post(
-			'https://d2qu1npgxlnkvp.cloudfront.net/prediction',
+			'https://denxyb2tri8x9.cloudfront.net/prediction',
 			form,
 		);
 		const dataCheck = results.data.plot_values.reduce((acc, curr) => {
