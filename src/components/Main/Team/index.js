@@ -4,11 +4,12 @@ import Card from './Card';
 
 import Section from '../../../styles/shared/Section';
 
-import blank from '../../../assets/pictures/blank.png';
+import conor from '../../../assets/pictures/conor.png';
 import jacob from '../../../assets/pictures/Jacob.png';
 import kevin from '../../../assets/pictures/kevin.png';
 import shreyas from '../../../assets/pictures/Shreyas.png';
 import tomas from '../../../assets/pictures/Tomas.png';
+import chris from '../../../assets/pictures/chris.png';
 
 const Team = () => {
 	const team = [
@@ -16,15 +17,23 @@ const Team = () => {
 			name: 'Connor Heraty',
 			description:
 				'Product Owner. Responsible for model implementation and flask deployment.',
-			image: blank,
-			links: { github: 'https://github.com/connorpheraty' },
+			image: conor,
+			links: {
+				portfolio: 'https://connorpheraty.github.io/',
+				github: 'https://github.com/connorpheraty',
+			},
 		},
 		{
 			name: 'Shreyas Jothish',
 			description:
 				'Worked on Data Wrangling, Feature Engineering, and Data Modeling of seasonal information Los Angeles dataset.',
 			image: shreyas,
-			links: { github: 'https://github.com/ShreyasJothish' },
+			links: {
+				portfolio: 'https://www.shreyasjothish.com/',
+				github: 'https://github.com/ShreyasJothish',
+				linkedin: 'https://www.linkedin.com/in/shreyasjothish/',
+				twitter: 'https://twitter.com/ShreyasJothish',
+			},
 		},
 		{
 			name: 'Tomas Fox',
@@ -37,7 +46,7 @@ const Team = () => {
 			name: 'Chris Carter',
 			description:
 				'Responsible for the front end of the project. Partnered with the UI developers and back end architect to ensure full functionality of React components.',
-			image: blank,
+			image: chris,
 			links: { github: 'https://github.com/ChrisJCarter91' },
 		},
 		{
