@@ -4,7 +4,7 @@ import Card from './Card';
 
 import Section from '../../../styles/shared/Section';
 
-import conor from '../../../assets/pictures/conor.png';
+import connor from '../../../assets/pictures/conor.png';
 import jacob from '../../../assets/pictures/Jacob.png';
 import kevin from '../../../assets/pictures/kevin.png';
 import shreyas from '../../../assets/pictures/Shreyas.png';
@@ -17,7 +17,7 @@ const Team = () => {
 			name: 'Connor Heraty',
 			description:
 				'Product Owner. Responsible for model implementation and flask deployment.',
-			image: conor,
+			image: connor,
 			links: {
 				portfolio: 'https://connorpheraty.github.io/',
 				github: 'https://github.com/connorpheraty',
@@ -40,7 +40,10 @@ const Team = () => {
 			description:
 				'Responsible for benchmarking our Airbnb predictor app against Tree Ensemble ML models.',
 			image: tomas,
-			links: { github: 'https://github.com/tomfox1' },
+			links: {
+				github: 'https://github.com/tomfox1',
+				linkedin: 'https://www.linkedin.com/in/tomasfox1/',
+			},
 		},
 		{
 			name: 'Chris Carter',
