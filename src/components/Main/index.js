@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
 
@@ -27,6 +27,11 @@ const Main = () => {
 		plotValues: [2, 47, 55, 58, 66, 34, 22, 13, 6, 5],
 		noResults: false,
 	});
+	
+	useEffect(() => {
+		// wake up server on load
+		axios.get('https://apn-proxy.herokuapp.com/prediction')
+	}, [])
 
 	const formChange = e => {
 		let value =
