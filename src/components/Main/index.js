@@ -47,7 +47,7 @@ const Main = () => {
 			zipcode: form.zipcode.toString(),
 		});
 		const results = await axios.post(
-			'https://aitbnbnew.eba-pk9ts2rm.us-east-2.elasticbeanstalk.com/prediction',
+			'https://apn-proxy.herokuapp.com/prediction',
 			form,
 		);
 		const dataCheck = results.data.plot_values.reduce((acc, curr) => {
